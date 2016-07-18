@@ -1,0 +1,141 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+		overflow: none;
+}
+body{
+    /*background-image: url(../img/bg03.jpg);*/
+    height: auto;
+    /*transform: scale(1);*/
+    transform-origin: center top 0px;
+}
+.main{
+    /*width: 100%;*/
+    height: auto;
+    /*background-size: 100% 100%;*/
+    margin: auto;
+    margin-top: 7%;
+    /*background-image: url(../img/huabian.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 5% 5%;*/
+    /*background-size: 73% 100%;
+    background-position: 50% 40%;*/
+}
+
+
+input{
+    width: 45%;
+    height: 3em;
+    background-color: rgba(224, 227, 232, 0.11);
+    margin-left: 23%;
+    border-radius: 5px;
+    /*margin: auto;*/
+    opacity: 1;
+    outline-style:none;
+    border: 1px solid rgba(239, 239, 239, 0.15);
+    font-size: 1em;
+    color: black;/*#bdc0b8;*/
+    font-family: "微软雅黑";
+    padding-left:40px;
+    margin-top: 4%;
+}
+input:focus{
+    background-color: rgba(196, 199, 204, 0.40);
+    /*border: 1px solid #7FCAF1;*/
+    box-shadow: 0px 0px 5px rgba(241, 237, 239, 0.35);
+    opacity: 1;
+}
+#submit{
+    width: 51.2%;
+    height: 3em;
+    font-size: 1em;
+    background-color: rgba(0, 133, 159, 0.96);
+    font-weight: bolder;
+    font-family: "微软雅黑";
+    opacity: 1;
+    margin-left: 22.9%;
+}
+#submit:active{
+    background-color: rgba(0, 113, 136, 0.96);
+    top: 5px;
+    box-shadow: 0px 0px 5px rgba(241, 237, 239, 0.35);
+}
+.main .center{
+    width: 35%;
+    height: 28em;
+    padding: 5.5% 0% 0% 0%;
+    background-image: url(../img/center.png);
+    background-size: 170% 150%;
+    background-position: 53% 49%;
+    opacity: 1;
+    margin: auto;
+    font-size:14px;
+    color: red;/*#cccccc;*/        /* 提示条颜色 */
+}
+
+#user_pass{
+    display: block;
+    position: absolute;
+    width: 17%;
+    height: auto;
+    /*background-color: red;*/
+    margin-left: -2%;
+    /*margin-top: -2.3%;*/
+}
+#pwd_pass{
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: auto;
+    /*background-color: red;*/
+    margin-left: -2%;
+}
+
+#surePwd_pass{
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: auto;
+    /*background-color: red;*/
+    margin-left:-2%;
+}
+#surePwd{
+    /*background-image: url(../image/we2.png);*/
+    background-repeat: no-repeat;
+    background-position: 96%;
+	width:45%;
+    background-size: 20% 78%;
+}
+
+.Cone{
+    color: #adadad;
+    position: absolute;
+    margin-left: 8.3%;
+    margin-top: 2%;
+    height: 50px;
+    font-size:1.35em;
+}
+.title{
+    color: purple;
+	font-size: 50px;
+	font-weight:bold;
+	font-family: "KaiTi";
+}
+#submit{
+	color:white;
+}
+.code{
+/*background-image:url(111.jpg);*/
+font-family:Arial,宋体;
+font-style:italic;
+color:green;
+border:0;
+padding:2px 3px;
+letter-spacing:3px;
+font-weight:bolder;
+margin-left:30px;
+}
+.unchanged {
+border:0;
+}

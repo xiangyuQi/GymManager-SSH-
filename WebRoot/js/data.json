@@ -1,0 +1,263 @@
+{
+	"rows" : [{
+				"category_id" : "1",
+				"name" : "ELECTRONICS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "1",
+				"rgt" : "44",
+				"level" : "0",
+				"uiicon" : ""
+			}, {
+				"category_id" : "2",
+				"name" : "TELEVISIONS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "2",
+				"rgt" : "19",
+				"level" : "1",
+				"uiicon" : ""
+			}, {
+				"category_id" : "3",
+				"name" : "TUBE",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "3",
+				"rgt" : "8",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "11",
+				"name" : "26 \" TV",
+				"price" : "200.00",
+				"qty_onhand" : "1",
+				"color" : "black",
+				"lft" : "4",
+				"rgt" : "5",
+				"level" : "3",
+				"uiicon" : "ui-icon-image"
+			}, {
+				"category_id" : "12",
+				"name" : "30 \" TV",
+				"price" : "350.00",
+				"qty_onhand" : "2",
+				"color" : "black",
+				"lft" : "6",
+				"rgt" : "7",
+				"level" : "3",
+				"uiicon" : "ui-icon-document"
+			}, {
+				"category_id" : "4",
+				"name" : "LCD",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "9",
+				"rgt" : "12",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "13",
+				"name" : "Super-LCD 42\" ",
+				"price" : "400.00",
+				"qty_onhand" : "10",
+				"color" : "all",
+				"lft" : "10",
+				"rgt" : "11",
+				"level" : "3",
+				"uiicon" : "ui-icon-video"
+			}, {
+				"category_id" : "5",
+				"name" : "PLASMA",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "13",
+				"rgt" : "18",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "14",
+				"name" : "Ultra-Plasma 62\" ",
+				"price" : "440.00",
+				"qty_onhand" : "2",
+				"color" : "silver",
+				"lft" : "14",
+				"rgt" : "15",
+				"level" : "3",
+				"uiicon" : "ui-icon-clipboard"
+			}, {
+				"category_id" : "15",
+				"name" : "Value Plasma 38\" ",
+				"price" : "312.00",
+				"qty_onhand" : "0",
+				"color" : "silver",
+				"lft" : "16",
+				"rgt" : "17",
+				"level" : "3",
+				"uiicon" : "ui-icon-clipboard"
+			}, {
+				"category_id" : "6",
+				"name" : "PORTABLE ELECTRONICS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "20",
+				"rgt" : "43",
+				"level" : "1",
+				"uiicon" : ""
+			}, {
+				"category_id" : "7",
+				"name" : "MP3 PLAYERS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "21",
+				"rgt" : "32",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "8",
+				"name" : "FLASH",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "22",
+				"rgt" : "29",
+				"level" : "3",
+				"uiicon" : ""
+			}, {
+				"category_id" : "17",
+				"name" : "Super-Shuffle 1gb",
+				"price" : "20.00",
+				"qty_onhand" : "11",
+				"color" : "all",
+				"lft" : "23",
+				"rgt" : "24",
+				"level" : "4",
+				"uiicon" : "ui-icon-note"
+			}, {
+				"category_id" : "21",
+				"name" : "5Gb Flash",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "25",
+				"rgt" : "26",
+				"level" : "4",
+				"uiicon" : "ui-icon-comment"
+			}, {
+				"category_id" : "22",
+				"name" : "10Gb  flash ",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "27",
+				"rgt" : "28",
+				"level" : "4",
+				"uiicon" : "ui-icon-tag"
+			}, {
+				"category_id" : "16",
+				"name" : " Power-MP3 128mb",
+				"price" : "123.00",
+				"qty_onhand" : "2",
+				"color" : "withe",
+				"lft" : "30",
+				"rgt" : "31",
+				"level" : "3",
+				"uiicon" : "ui-icon-signal-diag"
+			}, {
+				"category_id" : "9",
+				"name" : "CD PLAYERS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "33",
+				"rgt" : "38",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "18",
+				"name" : " Porta CD ",
+				"price" : "10.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "34",
+				"rgt" : "35",
+				"level" : "3",
+				"uiicon" : "ui-icon-eject"
+			}, {
+				"category_id" : "19",
+				"name" : "CD To go!",
+				"price" : "110.00",
+				"qty_onhand" : "11",
+				"color" : "",
+				"lft" : "36",
+				"rgt" : "37",
+				"level" : "3",
+				"uiicon" : "ui-icon-power"
+			}, {
+				"category_id" : "10",
+				"name" : "2 WAY RADIOS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "39",
+				"rgt" : "42",
+				"level" : "2",
+				"uiicon" : ""
+			}, {
+				"category_id" : "20",
+				"name" : "Family Talk 360 ",
+				"price" : "200.00",
+				"qty_onhand" : "15",
+				"color" : "",
+				"lft" : "40",
+				"rgt" : "41",
+				"level" : "3",
+				"uiicon" : "ui-icon-volume-on"
+			}, {
+				"category_id" : "23",
+				"name" : "COMPUTERS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "45",
+				"rgt" : "50",
+				"level" : "0",
+				"uiicon" : ""
+			}, {
+				"category_id" : "25",
+				"name" : "DESKTOP ",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "46",
+				"rgt" : "47",
+				"level" : "1",
+				"uiicon" : ""
+			}, {
+				"category_id" : "26",
+				"name" : "LAPTOPS",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "48",
+				"rgt" : "49",
+				"level" : "1",
+				"uiicon" : ""
+			}, {
+				"category_id" : "24",
+				"name" : "APPLIANCES",
+				"price" : "0.00",
+				"qty_onhand" : "0",
+				"color" : "",
+				"lft" : "51",
+				"rgt" : "52",
+				"level" : "0",
+				"uiicon" : ""
+			}]
+}

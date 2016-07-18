@@ -1,0 +1,42 @@
+body {
+	font-family: 'Microsoft Yahei', 微软雅黑, 宋体, 宋体, arial, 'Hiragino Sans GB',
+		Tahoma, Arial, Helvetica, STHeiti;
+	background-color: #f3f3f4;
+}
+
+.box {
+	padding: 10px;
+	padding-left: 25px;
+	width: 340px;
+	position: absolute;
+	left: 50%;
+	margin-left: -170px;
+	margin-top: 100px;
+	border: 1px dashed red;
+}
+
+.form-horizontal .controls {
+	margin-left: 80px;
+}
+
+.form-horizontal .control-label {
+	width: 72px;
+}
+
+.btn-block {
+	width: 100%;
+	margin-left: -10px;
+	margin-bottom: 10px;
+}
+
+.controls a:hover {
+	cursor: pointer;
+}
+
+input.error {
+	border: 1px solid red;
+}
+
+input.valid {
+	border: 1px solid green;
+}

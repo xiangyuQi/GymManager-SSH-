@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+	<diskStore path="java.io.tmpdir/hibernate"/>
+	<defaultCache maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="600" timeToLiveSeconds="3600"
+		overflowToDisk="true" diskSpoolBufferSizeMB="30" maxElementsOnDisk="10000000" 
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="600"/>
+
+	<!-- 实体对象定制缓存，没定制的实体使用默认设置 -->
+	
+</ehcache>

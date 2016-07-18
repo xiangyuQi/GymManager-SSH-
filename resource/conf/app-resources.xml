@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.1.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+	<!-- 组件自动扫描 -->
+	<context:component-scan base-package="com.kzw">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<context:property-placeholder location="classpath*:conf/jdbc.properties"/>
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+  		<property name="driverClass">
+  			<value>${jdbc.driver}</value>
+  		</property>
+  		<property name="jdbcUrl">
+  			<value>${jdbc.url}</value>
+  		</property>
+  		<property name="user">
+  			<value>${jdbc.username}</value>
+  		</property>
+  		<property name="password">
+  			<value>${jdbc.password}</value>
+  		</property>
+  		<property name="initialPoolSize">
+  			<value>${c3p0.initialPoolSize}</value>
+  		</property>
+  		<property name="minPoolSize">
+  			<value>${c3p0.minPoolSize}</value>
+  		</property>
+  		<property name="maxPoolSize">
+  			<value>${c3p0.maxPoolSize}</value>
+  		</property>
+  		<property name="maxIdleTime">   
+            <value>${c3p0.maxIdleTime}</value>   
+        </property>
+        <property name="acquireIncrement">   
+            <value>${c3p0.acquireIncrement}</value>   
+        </property>
+        <property name="maxStatements">   
+            <value>${c3p0.maxStatements}</value>   
+        </property>
+        <property name="idleConnectionTestPeriod">   
+            <value>${c3p0.idleConnectionTestPeriod}</value>
+        </property>
+        <property name="acquireRetryDelay">
+        	<value>${c3p0.acquireRetryDelay}</value>
+        </property>
+        <property name="acquireRetryAttempts">
+            <value>${c3p0.acquireRetryAttempts}</value>
+        </property>
+        <property name="breakAfterAcquireFailure">
+            <value>${c3p0.breakAfterAcquireFailure}</value>
+        </property>
+        <property name="numHelperThreads">
+        	<value>${c3p0.numHelperThreads}</value>
+        </property>
+        <property name="testConnectionOnCheckin">
+            <value>${c3p0.testConnectionOnCheckin}</value>
+        </property>
+        <property name="preferredTestQuery">
+            <value>${c3p0.preferredTestQuery}</value>
+        </property>
+ 	</bean>
+ 	
+	
+	<!-- 集成hibernate框架 -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan">
+			<list>
+				<value>com.kzw.system.entity</value>
+				<value>com.kzw.gym.entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="connection.useUnicode">true</prop>
+				<prop key="connection.characterEncoding">utf-8</prop>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.jdbc.batch_size">20</prop>
+				<prop key="hibernate.jdbc.fetch_size">20</prop>
+				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
+				<prop key="net.sf.ehcache.configurationResourceName">conf/ehcache.xml</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 事务配置 -->
+	<bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<tx:annotation-driven transaction-manager="txManager"/>
+	
+	<!-- JSR303 验证 -->
+	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+	
+	<bean id="SpringContextHolder" class="com.kzw.core.util.spring.SpringContextHolder"/>
+</beans>
+
